@@ -1,0 +1,21 @@
+// Declarative pipeline
+pipeline {
+    agent any
+    stages {
+        stage("Build") {
+            steps {
+                echo "This building stage"
+            }
+        }
+        stage("Test") {
+            steps {
+                echo "This is testing pipeline"
+            }
+        }
+        stage("Deploy") {
+            steps {
+                echo "This is deployment stage"
+            }
+        }
+    }  
+}
