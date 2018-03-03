@@ -6,6 +6,8 @@ pipeline {
     }
     options {
         buildDiscarder(logRotator(numToKeepStr:'10'))
+        timout(time:1,unit:"HOURS")
+        retry(3)
     }
     stages {
         stage("Roll Number") {
