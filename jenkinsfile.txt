@@ -4,6 +4,9 @@ pipeline {
     parameters {
         string(name:"Chandra",defaultValue:"521",description:"Chandra details in Btech")
     }
+    options {
+        buildDiscarder(logRotator(numToKeepStr:'10'))
+    }
     stages {
         stage("Roll Number") {
             steps {
