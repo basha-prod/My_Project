@@ -3,7 +3,7 @@ pipeline {
     agent any
     parameters {
         string(name:"Chandra",defaultValue:"521",description:"Chandra details in Btech")
-        booleanParam(name:"Boolean",defaultValue:True,description:"This Boolean parameter")
+        booleanParam(name:"Boolean",defaultValue:true,description:"This Boolean parameter")
     }
     options {
         buildDiscarder(logRotator(numToKeepStr:'10'))
