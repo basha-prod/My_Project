@@ -2,7 +2,7 @@
 pipeline {
     agent any
     parameters {
-        string(name:"Chandra",defaultValue:"521",description:"Chandra details in Btech"
+        string(name:"Chandra",defaultValue:"521",description:"Chandra details in Btech")
     }
     stages {
         stage("Roll Number") {
