@@ -10,6 +10,10 @@ pipeline {
         timeout(time:1,unit:"HOURS")
         retry(3)
     }
+    triggers {
+        cron('H */1 * * 1-6')
+        pollSCM('H */1 * * *')
+    }
     stages {
         stage("Roll Number") {
             steps {
