@@ -2,7 +2,7 @@
 pipeline {
     agent any
     parameters {
-        string(name:"Chandra",defaultValue:"521",description:"Chandra details in Btech")
+        string(name:"Basha",defaultValue:"521",description:"Chandra details in Btech")
         booleanParam(name:"Boolean",defaultValue:true,description:"This Boolean parameter")
     }
     options {
